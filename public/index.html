@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <!-- Join chat wrapper -->
+    <div class="join-chat-wrapper" id="myModal">
+        <div class="join-chat-container">
+            <div class="join-chat-header">
+                <h1>Join Chat</h1>
+            </div>
+            <div class="join-chat-body">
+                <form action="" method="post" id="userForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="userName" class="form-control" placeholder="Enter your name" required>
+                    </div>
+                    <!-- <div class="form-group">
+                        <label for="room">Room</label>
+                        <input type="text" name="room" id="room" class="form-control" placeholder="Enter room name">
+                    </div> -->
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Join</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Chat wrapper -->
+    <div class="chat-wrapper">
+        <div class="chat-container">
+            <div class="chat-header">
+                <h3>Chat</h3>
+            </div>
+            <div class="chat-status">
+                <span id="welcome"></span>
+            </div>
+            <div class="chat-body">
+                <div class="chat-messages">
+                    <div class="chat-message" id="chat-message">
+                    </div>
+                </div>
+                <div class="chat-form">
+                    <form action="" method="post" id="postForm">
+                        <div class="post-wrap">
+                            <input type="text" name="message" id="message" class="form-control" placeholder="Enter your message" required>
+                            <button type="submit" class="btn btn-primary">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/socket.io/socket.io.js"></script>
+<script src="./app.js"></script>
+</html>
