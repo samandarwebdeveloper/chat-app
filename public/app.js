@@ -5,10 +5,7 @@ const userform = document.getElementById('userForm');
 const userName = document.getElementById('userName');
 const postForm = document.getElementById('postForm');
 const message = document.getElementById('message');
-const container = document.getElementById('container');
 const chatMessage = document.getElementById('chat-message');
-const chatMsgMe = document.getElementById('chat-msg-me');
-const chatMsgUser = document.getElementById('chat-msg-user');
 
 
 
