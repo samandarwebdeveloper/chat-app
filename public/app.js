@@ -43,6 +43,7 @@ postForm.addEventListener('submit', e => {
         message: msg
     })
     message.value = ''
+    window.scrollTo(0, document.body.scrollHeight);
 })
 
 socket.on('message', ({ name, message }) => {
